@@ -3,7 +3,7 @@
 :root {
     --light-bg-color: #fafafa;
     --dark-bg-color: #2d2d2d;
-    --secondary-bg-color: #1e6674
+    --secondary-bg-color: #1e6674;
 }
 
 html {
@@ -27,11 +27,12 @@ a {
 }
 
 .header {
-    background-color: var(--dark-bg-color);
+    background: linear-gradient(to bottom right, #B0BEC5, #CFD8DC, #ECEFF1);
     text-align: center;
     padding: 2em 1em;
-    color: #fff;
+    color: #2d2d2d;  /* Adjusting text color for better readability */
 }
+
 
 .header h1 {
     text-transform: uppercase;
@@ -50,180 +51,24 @@ a {
     width: 8%;
 }
 
+.container {
+    display: flex;
+}
+
 .left-panel {
-    /*background-color: var(--secondary-bg-color);*/
-  background: linear-gradient(to right, rgb(190, 147, 197), rgb(123, 198, 204));";
-    /*color: #fff;*/
-    flex: 2;
+    /*background: linear-gradient(to right, rgb(190, 147, 197), rgb(123, 198, 204));*/
+    background: linear-gradient(to right, #B0BEC5, #CFD8DC);
+    flex: 3;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
 }
 
-
 .right-panel {
-    background-color: var(--light-bg-color);
-    flex: 2;
+    /*background-color: var(--light-bg-color);*/
+    background-color: #CFD8DC;  /* This color is taken from the gradient of the left panel */
+    flex: 7;
     padding: 2rem 5rem;
 }
 
-.profile-img-wrapper {
-    width: 70%;
-}
-
-.profile-img-wrapper img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.education article, .experience article {
-    display: flex;
-}
-
-.education article > .date, .experience article > .date {
-    flex: 1;
-}
-
-.education article > .description, .experience article > .description {
-    flex: 3;
-}
-
-.right-panel section hr {
-    border: var(--secondary-bg-color) 1px solid;
-    margin-right: -5rem;
-}
-
-.right-panel section {
-    margin-bottom: 3rem;
-}
-
-.right-panel .section-title {
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: .3rem;
-}
-
-.right-panel section article h3 {
-    font-weight: 600;
-    margin-bottom: 0;
-}
-
-.right-panel section article h4 {
-    font-weight: 500;
-    margin: .5rem 0;
-    font-style: italic;
-}
-
-.footer {
-    background-color: var(--dark-bg-color);
-    color: #fff;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.about {
-    margin-bottom: 2rem;
-}
-
-.personal-data ul {
-    list-style: none;
-    padding: 0;
-}
-
-.personal-data i {
-    margin-right: .5rem;
-}
-
-.personal-data span a {
-    color: #fff;
-}
-
-.personal-data ul li h4 {
-    margin: 1rem 0 .4rem 0;
-}
-
-.social-links {
-    text-align: center;
-    margin-top: auto;
-}
-
-.social-links a {
-    margin: 0 .3rem;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: .2s all ease-in-out;
-}
-
-.social-links a:hover {
-    opacity: .6;
-    transform: scale(2);
-}
-
-.skills-list {
-    columns: 3;
-    list-style-type: none;
-}
-
-.languages-list {
-    list-style-type: none;
-}
-
-.skills-list li::before, .languages-list li::before {
-    content: "\2022";
-    color: var(--secondary-bg-color);
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-@media (max-width: 992px) {
-    .left-panel {
-        flex: 1;
-    }
-
-    .right-panel {
-        flex: 2;
-        padding: 2rem 1rem 2rem 2rem;
-    }
-
-    .right-panel section hr {
-        border: var(--secondary-bg-color) 1px solid;
-        margin-right: -1rem;
-    }
-
-    .skills-list {
-        columns: 2;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        display: flex;
-    }
-}
-
-@media (max-width: 768px) {
-    .education article, .experience article {
-        display: block;
-    }
-
-    .education article > .date, .experience article > .date,
-    .education article > .description, .experience article > .description {
-        width: 100%;
-    }
-
-    .education article > .description h3, .experience article > .description h3 {
-        margin-top: .5rem;
-    }
-
-    .left-panel, .right-panel {
-        padding: 2rem 1rem;
-    }
-
-    .header hr {
-        width: 25%;
-    }
-}
