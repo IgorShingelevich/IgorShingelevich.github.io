@@ -72,3 +72,6 @@ categories.forEach(category => {
         });
     });
 });
+
+// lang switcher
+

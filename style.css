@@ -28,11 +28,18 @@ a {
 
 .header {
     background: linear-gradient(to bottom right, #B0BEC5, #CFD8DC, #ECEFF1);
-    text-align: center;
     padding: 2em 1em;
-    color: #2d2d2d;  /* Adjusting text color for better readability */
+    color: #2d2d2d; /* Adjusting text color for better readability */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
+.header-content {
+    text-align: center;
+    flex-grow: 1;
+}
 
 .header h1 {
     text-transform: uppercase;
@@ -51,6 +58,31 @@ a {
     width: 8%;
 }
 
+.language-switch {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+
+.language-switch ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.language-switch li {
+    float: left;
+    margin-right: 10px;
+}
+
+.language-switch a {
+    text-decoration: none;
+    color: #2d2d2d; /* Adjusting text color to match header text color */
+}
+
+
 .container {
     display: flex;
 }
@@ -67,14 +99,69 @@ a {
 
 .right-panel {
     /*background-color: var(--light-bg-color);*/
-    background-color: #CFD8DC;  /* This color is taken from the gradient of the left panel */
+    background-color: #CFD8DC; /* This color is taken from the gradient of the left panel */
     flex: 7;
     padding: 2rem 5rem;
 }
+
+.company {
+    /*border: 2px solid #2d2d2d; !* Adds a border *!*/
+    /*padding: 20px; !* Adds some space inside the border *!*/
+    /*background-color: #f0f0f0; !* A light grey background color *!*/
+    /*margin: 10px 0; !* Adds some space outside the border, separating it from other elements *!*/
+    /*border-radius: 10px; !* Optional: Rounds the corners of the border *!*/
+}
+
+.responsibilities {
+    /*border: 2px solid #2d2d2d; !* Adds a border *!*/
+    /*padding: 5px; !* Adds some space inside the border *!*/
+    /*background-color: #f0f0f0; !* A light grey background color *!*/
+    /*margin: 10px 0; !* Adds some space outside the border, separating it from other elements *!*/
+    /*border-radius: 10px; !* Optional: Rounds the corners of the border *!*/
+}
+
 
 .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
+footer {
+    background: linear-gradient(to bottom right, #B0BEC5, #CFD8DC, #ECEFF1); /* same gradient as header */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the top of the footer */
+    padding: 1em;
+    gap: 1em; /* Adds space between the columns */
+    color: #2d2d2d; /* same text color as header */
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.1); !* subtle shadow for elevation *!*/
+}
+
+.footer-row {
+    flex: 1; /* Ensures each .footer-row takes up equal space */
+    padding: 1em;
+    text-align: center;
+    /*background-color: #FFFFFF; !* Optional: white background for each column *!*/
+    /*border-radius: 4px; !* Optional: rounded corners *!*/
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.1); !* subtle shadow for elevation *!*/
+    margin: 0.5em; /* space between columns */
+}
+
+.footer-row a {
+    color: var(--secondary-bg-color); /* use the secondary color for links */
+    /* ... other styles ... */
+}
+
+
+.downloads, .social-links, .contacts {
+    text-align: center; /* Center the text */
+}
+
+.footer-row h4 {
+    margin-bottom: 0.5em; /* Add some space below the heading */
+}
+
+
 
