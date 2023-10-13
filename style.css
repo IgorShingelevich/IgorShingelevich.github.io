@@ -107,11 +107,11 @@ a {
 
 .profile-img-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .profile-img-wrapper img {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: cover;
     border-radius: 20%;
@@ -172,6 +172,18 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
+    .profile-img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-img-wrapper img {
+        width: 50%;  /* Adjusted the width to 50% for mobile */
+        height: auto;
+        object-fit: cover;
+        border-radius: 20%;
+    }
 
     .header-content h1 {
         font-size: 1.5rem;  /* Adjust the font size for mobile */
