@@ -183,7 +183,7 @@ footer {
     }
 
     .profile-img-wrapper img {
-        width: 30%;  /* Adjusted the width to 50% for mobile */
+        width: 40%;  /* Adjusted the width to 50% for mobile */
         height: auto;
         object-fit: cover;
         border-radius: 20%;
@@ -191,7 +191,7 @@ footer {
 
     .header-content h1 {
         font-size: 200%;  /* Adjust the font size for mobile */
-        line-height: 1.8rem;  /* Adjust the line height for mobile */
+        line-height: 4rem;  /* Adjust the line height for mobile */
         margin-bottom: 0.5rem;  /* Add some margin below the text to create spacing */
     }
 
