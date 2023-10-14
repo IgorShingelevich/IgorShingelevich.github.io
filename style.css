@@ -171,7 +171,7 @@ footer {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
 
     .profile-img-wrapper {
         display: flex;
@@ -179,7 +179,7 @@ footer {
     }
 
     .profile-img-wrapper img {
-        width: 50%;  /* Adjusted the width to 50% for mobile */
+        width: 30%;  /* Adjusted the width to 50% for mobile */
         height: auto;
         object-fit: cover;
         border-radius: 20%;
