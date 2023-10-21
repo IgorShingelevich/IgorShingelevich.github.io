@@ -166,23 +166,23 @@
                             <div class="responsibilities">
                                 <ul>
                                     <li>
-                                        <strong>Junit.</strong> Реализована динамическая создание пользователей с
-                                        помощью Junit Extension. Назначение экземплярам браузера
-                                        для каждой бизнес-роли во время выполнения теста для последующей работы с
-                                        контекстом POM и отчетностью. Реализованы soft assertions для сбора ряда
+                                        <strong>Junit.</strong> Реализовано динамическое создание пользователя с
+                                        помощью Junit Extension. Для каждой роли пользователя назначен свой экземпляр
+                                        браузера для последующей работы с контекстозависимой POM и отчетностью.
+                                        Реализованы soft assertions для сбора ряда
                                         проверок и отчета о них в конце теста.
                                     </li>
                                     <li>
-                                        <strong>RestAssured.</strong> Покрытие поведения системы на уровне API, следуя
-                                        пользовательским историям.
-                                        Реализован подход к переходу состояний, учитывая бизнес-логику, для описания
-                                        возможных состояний системы с помощью цепочки запросов API.
+                                        <strong>RestAssured.</strong> Повторение user stories на уровне API, дла
+                                        формирования предусловий. Реализован state transition подход на уровне API -
+                                        следуя
+                                        бизнес-логике описаны ключевые состояний системы с помощью цепочки запросов API.
                                     </li>
                                     <li>
-                                        <strong>Selenide.</strong> Реализована зависимая от контекста структура POM для
-                                        описания различных пользовательских ролей.
+                                        <strong>Selenide.</strong> Реализована гибкая структура POM для
+                                        описания различных пользовательских ролей и различных состояний системы.
                                         Создание контекста страниц/компонентов для каждой роли. Следуя бизнес-логике,
-                                        описан переход состояния UI-компонентов для каждого заданного состояния
+                                        описан переход состояния UI-компонентов (набор контролов) для каждого заданного состояния
                                         в контексте различных ролей.
                                     </li>
                                     <li>
@@ -406,29 +406,38 @@
     <div class="footer-row">
         <div class="downloads">
             <h4><i class="fas fa-file-download"></i> Загрузки</h4>
-            <a download="proposed_file_name" href="path_to_file">PDF eng</a>
+            <a download="QA Игорь Шингелевич"
+               href="resources/QA_Shingelevich_Igor_ru.pdf">
+                PDF ru</a>
             <br>
-            <a download="proposed_file_name" href="path_to_file">PDF ru</a>
+<!--            <a download="proposed_file_name" href="path_to_file">PDF ru</a>-->
         </div>
     </div>
     <div class="footer-row">
         <div class="social-links">
             <h4>Социальные сети</h4>
             <a href="https://t.me/IgorShingelevich" target="_blank">
-                <i class="fab fa-telegram"></i> IgorShingelevich
+                <i class="fab fa-telegram"></i> мой Telegram
             </a>
             <br>
-            <!--            https://github.com/IgorShingelevich-->
             <a href="https://github.com/IgorShingelevich" target="_blank">
-                <i class="fab fa-github"></i> IgorShingelevich на GitHub
+                <i class="fab fa-github"></i> мой GitHub
             </a>
+            <br>
+<!--            for hh.ru-->
+            <a href="https://hh.ru/resume/d0bca4a4ff0b5e27fd0039ed1f6e5837437353 "
+               target="_blank">
+                <i class="fas fa-briefcase">
+
+                </i> мое резюме на hh.ru
+            </a>
+
         </div>
     </div>
     <div class="footer-row">
         <div class="contacts">
             <h4>Контактные данные</h4>
             <p><i class="fas fa-city"></i> Москва<i class="fas fa-phone"></i> +7 985 546 92 39</p>
-            <!--            <p><i class="fas fa-phone"></i> +7 985 546 92 39</p>-->
             <p><i class="fas fa-envelope"></i> shingelevich@gmail.com</p>
         </div>
     </div>
